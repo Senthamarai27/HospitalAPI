@@ -1,9 +1,20 @@
 # HospitalAPI
+To designed an API for the doctors of a Hospital which has been allocated by the
+govt for testing and quarantine + well being of COVID-19 patients.
 
 # Routes
-1. Register a Doctor: [POST]: /api/v1/doctors/register
-2. Login for Doctor: [POST]: /api/v1/doctors/login
-3. Register a patient: [POST]: /api/v1/patients/register
-4. Create Patient report: [POST]: /api/v1/patients/:id/create_report
-5. Fetch All Reports of a Patient [GET]: /api/v1/patients/:id/all_reports
-6. Fetch All Reports Based on a Status: [GET]: /api/v1/reports/:status
+1. Register a Doctor: [POST]: /doctor/register
+2. Login for Doctor: [POST]: /doctor/login
+3. Register a patient: [POST]: /patients/registers
+4. Create Report of patient: [POST]: /patients/:id/create_report
+5. Fetch All Reports of a Patient [GET]: /patients/:id/all_report
+6. Fetch the Reports Based on a Status: [GET]: /reports/:status
+
+# Tech Stack
+- NodeJS
+- MongoDB
+- Express
+
+# To start the project in local system, write two commands in the terminal
+- npm install, Then after installing all the dependencies, write
+- node .\index.js or nodemon .\index.js.
